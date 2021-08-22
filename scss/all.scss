@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600&display=swap");
+@import "./reset";
+@import "./breakpoints";
+@import "./layout";
+@import "./header";
+@import "./banner";
+@import "./selectionDetail";
+@import "./selectionPlatform";
+@import "./footer";
+@import "./coupon";
+@import "./dialog";
+@import "./arrow";
+// after fixed
+
+.main {
+  // margin-bottom:-410px;
+  overflow: hidden;
+}

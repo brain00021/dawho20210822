@@ -1,0 +1,174 @@
+// coupon
+.selectionCoupon-bg-wrapper {
+  // @extend .selectionPlatform-bg-wrapper;÷
+  // background:url('../img/selection-coupon-bg.svg') no-repeat top center;
+  // background-size: cover;
+  position: relative;
+  top: -200px;
+  overflow: hidden;
+  // padding-bottom:150px;
+  // margin-bottom: -410px;
+  @include pad {
+    // background: url("../img/selection-coupon-pad-bg.svg") no-repeat top center;
+    background-size: cover;
+  }
+  @include mobile {
+    // background: url("../img/selection-coupon-mob-bg.svg") no-repeat top center;
+    background-size: cover;
+  }
+}
+#selectionCoupon-description {
+  // margin-top: 150px;
+  @include mobile {
+    margin-top: 50px;
+  }
+}
+#selectionCoupon-title {
+  @extend #selectionDetail-title;
+  height: auto;
+}
+#selectionCoupon-description-innerWrapper {
+  display: flex;
+  justify-content: space-between;
+  // min-height:500px;
+  @include pad {
+    flex-direction: column;
+  }
+}
+.coupon {
+  // font-family: 'GenJyuuGothic';
+  cursor: pointer;
+  position: relative;
+  @include size(489px, 192px);
+  // padding-left: 100px;
+  // padding-right: 30px;
+  margin: 20px auto;
+  // @media screen and (max-width: 1600px) {
+  //   width: 490px;
+  // }
+  // @include pad {
+  //   margin: 30px auto;
+  // }
+  // @include mobile {
+  //   @include size(360px, 210px);
+  //   padding-left: 70px;
+  // }
+  .coupon-btn {
+    display: none;
+    @include pad {
+      display: block;
+      position: absolute;
+      margin: auto;
+      top: -50px;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+    @include mobile {
+      top: -20px;
+      right: 0;
+      left: 0;
+    }
+  }
+  &:hover {
+    box-shadow: 0 0 15px #fff;
+    top: -10px;
+    // .icon-wrapper .icon .icon-more {
+    //   opacity: 1;
+    //   right: -100px;
+    //   @media screen and (max-width: 1600px) {
+    //     right: -70px;
+    //   }
+    //   @include pad {
+    //     display: none;
+    //   }
+    // }
+  }
+  h3 {
+    position: relative;
+    display: block;
+    margin-top: 62px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    @include mobile {
+      font-size: 18px;
+      margin-top: 60px;
+    }
+  }
+  .detail {
+    position: relative;
+    // @include size(260px, 70px);
+    margin: 15px auto 0;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #cc9f50;
+
+    p {
+      font-size: 24px;
+    }
+    span {
+      font-size: 18px;
+    }
+    @include mobile {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+    .icon-wrapper {
+      position: absolute;
+
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: flex-end;
+      right: -150px;
+      top: -60px;
+      @include mobile {
+        right: -50px;
+        top: 0px;
+      }
+    }
+  }
+}
+#coupon1 {
+  background: url("../img/coupon-mob-btn.jpeg") no-repeat center center;
+  // background-size: 100%;
+  z-index: 5;
+  @include web {
+    // margin-right: 150px;
+  }
+  @include pad {
+    // margin-bottom: 50px;
+  }
+}
+#coupon2 {
+  background: url("../img/coupon-mob-btn2.jpeg") no-repeat center center;
+  // background-size: 100%;
+  h3 {
+    color: #000;
+  }
+}
+
+#selectionCoupon-description-bg {
+  @include size(935px, 316px);
+  margin: auto;
+  margin-top: 150px;
+  @include pad {
+    margin-top: 50px;
+    width: 768px;
+    margin-bottom: 150px;
+  }
+  @include mobile {
+    width: 640px;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 100%;
+  }
+}
+.squirrel {
+  @include size(75px, 74px);
+  background: url("../img/squirrel.svg") no-repeat center center;
+  position: absolute;
+  bottom: 300px;
+  left: 10px;
+}

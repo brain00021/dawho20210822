@@ -1,0 +1,205 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title 台新銀行-Fun膽藝起玩
+    link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
+    meta(property='og:type' content='website')
+    meta(property='og:locale' content='zh_TW')
+    meta(property='og:title' content='台新銀行-Fun膽藝起玩')
+    meta(property='og:description' content='藝文享受一級棒！跟著台新一起玩，指定藝文通路可享滿額10%回饋！看電影、演唱會、藝文表演、買書刷台新，多項藝文活動回饋享不盡。您還在等什麼？ 快來加入台新銀行Fun膽藝起玩')
+    meta(property='og:image' content='./img/fb.jpg')
+    meta(name='keyword' content='台新挺藝文、Fun膽一起玩、振興三倍券、新光影城、威秀影城、國賓影城、Netflix、KKBOX、KKTV、Spotify、Li TV、CATCHPLAY+、遠傳friDay音樂、Line TV、Line Music、愛奇藝、Ｖisa卡')
+    // google font
+    link(href='https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap' rel='stylesheet')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
+    // style
+    link(rel='stylesheet' href='./css/all.css')
+  // 導覽列
+  body
+    nav.header
+      .header-wrapper
+        input#menu-toggle(type='checkbox' onclick='handleClick(this);')
+        label(for='menu-toggle')
+          span
+          span
+          span
+        a.logo(href='index.html')
+          img(src='./img/nav-logo.png' alt='台北富邦銀行')
+          //- span FUN膽藝起玩
+        //- .nav-links
+        //-   a(href='#' data-selection='selectionDetail') 活動辦法
+        //-   a(href='#' data-selection='selectionPlatform') 影音FUN肆看
+        //-   a(href='#' data-selection='selectionCoupon') 回饋FUN心拿
+    // 下方區域
+    section.main
+      .banner-bg-wrapper
+        .main-wrapper
+          #banner
+            .concern-wrapper
+            .slogan-wrapper
+            
+              .slogan
+                img(src='./img/slogan.png' alt='')
+              .slogan2
+                span 投資就像一場舞會，教你舞步的人未必能走到散場，但DAWHO一直都在。
+              .slogan3
+                span 入場資格
+                span DAWHO數位帳戶客戶
+                span 2021/09/01-2021/09/30
+            
+              //- .conern-platform
+              //-   img(src='./img/concern-bg.svg' alt='')
+              //- .conern-dancefan
+              //-   img(src='./img/banner-dancefan-bg.svg' alt='')
+            //- #scrollDownBtn(data-selection='selectionDetail')
+            //-   span 向下滑動看更多
+            //-   .icon
+            //-     .arrow.arrow-first
+            //-     .arrow.arrow-second
+      .selectionCoupon-bg-wrapper
+        .main-wrapper
+          //- .squirrel
+          #selectionCoupon
+            //- #selectionCoupon-title
+              //- .title
+              //-   img(src='./img/selection-coupon-title.svg')
+            #selectionCoupon-description
+              #selectionCoupon-description-innerWrapper
+                a#coupon1.coupon(href='https://mkp-tsbank.cdn.hinet.net/TsCms/marketing/expose/WM_20200617141221172/index.html' target='_blank')
+                  h3 首次換匯的新舞伴
+                  .detail
+                    p 全家咖啡乙杯
+                      span (限量5,000名)
+                    //- .icon-wrapper
+                    //-   .icon
+                    //-     img(src='./img/coupon-icon-1.svg')
+                    //-     .icon-more
+                    //-       img(src='./img/coupon-icon-more.svg')
+                a#coupon2.coupon(href='https://mkp-tsbank.cdn.hinet.net/TsCms/marketing/expose/WM_20200114105209297/index.html' target='_blank')
+                  //- .coupon-btn
+                  //-   img(src='./img/coupon-mob-btn.svg' alt='')
+                  h3 最懂換匯的舞王舞后
+
+                  .detail
+                    p 全家咖啡乙杯 
+                      span (限量5,000名)
+                    //- .icon-wrapper
+                    //-   .icon
+                    //-     img(src='./img/coupon-icon-2.svg')
+                    //-     .icon-more
+                    //-       img(src='./img/coupon-icon-more.svg')
+      .selectionPlatform-bg-wrapper
+        .main-wrapper
+          .bird
+          #selectionPlatform
+            #selectionPlatform-title
+              .title
+                img(src='./img/selection-platform-title.svg')
+            #selectionPlatform-description
+              #selectionPlatform-description-innerWrapper
+                #role1.role
+                  .role-card
+                    .role-detail-front
+                    .role-detial-bg  
+                  .role-bg
+                #role2.role
+                  .role-card
+                    .role-detail-front
+                      a(href='https://mkp-tsbank.cdn.hinet.net/tscccms/promotion/detail/WM_20200623090422153' target='_blank')  
+                    .role-detial-bg  
+                  .role-bg
+                #role3.role
+                  .role-card
+                    .role-detail-front
+                      a(href='https://taishin.tw/cardevent/?utm_source=taishinweb&utm_medium=click&utm_campaign=2020_promo' target='_blank')
+                    .role-detial-bg  
+                  .role-bg
+      .selectionDetail-bg-wrapper
+        .main-wrapper
+          #selectionDetail
+            #selectionDetail-title
+              .title
+                img(src='./img/selection-detail-title.svg')
+            #selectionDetail-description
+              #selectionDetail-description-innerWrapper
+                h1 看電影、演唱會、藝文表演、買書，刷台新回饋享不盡
+                .data
+                  p 活動日期：109/7/22~109/9/30
+                p 活動說明：刷台新信用卡於指定藝文通路單筆消費滿NT$1,000(含)贈100元刷卡金 （刷卡金限折抵指定數位影音通路消費）。
+                #btn-detail.btn1 活動詳情
+              #selectionDetail-stamp
+                img(src='./img/selection-detail-stamp.svg')
+              #selectionDetail-description-bg
+
+
+
+      .dialog-bg
+        .dialog-wrapper
+          .main-wrapper
+            #dialog-btn.dialog-btn
+              img(src='img/dialog-close.svg')
+            .dialog-content
+              p 活動內容：
+              br
+              p
+                | 活動期間內刷台新信用卡於指定藝文通路單筆消費滿NT$1,000(含)贈100元刷卡金 ，
+                span.text-underline 刷卡金限折抵109/11/1~110/1/31指定數位影音通路消費，未折抵刷卡金將歸零。
+                | (限量登錄20,000份，正附卡合併計算，每歸戶正卡人ID上限刷卡金100元)
+              p 指定藝文通路：
+              .card-wrapper
+                .card
+                  .th 電影院
+                  .tbody 新光、威秀、國賓、秀泰、喜樂、美麗華、美麗新、喜滿客、in89、新月、親親、總督、中影屏東影城、台南真善美劇院、梅花數位、真善美劇院、哈拉影城、鴻金寶
+                .card
+                  .th 藝文購票
+                  .tbody 國家表演藝術中心國家兩廳院、寬宏藝術、拓元售票、牛耳購票、ｉＮＤＩＥＶＯＸ、ｕｄｎ售票網 、雲門舞集、國家表演藝術中心臺中國家歌劇、KKTIX華娛、年代售票
+                .card
+                  .th 書店
+                  .tbody 誠品、金石堂、墊腳石、三民書局、金玉堂、敦煌
+              p 限折抵數位影音通路(透過電信公司、iTunes支付除外)：
+              p
+                | Netflix、KKBOX(含KKBOX Prime、KKTV)、Spotify、Li TV、CATCHPLAY+、遠傳friDay音樂、Line TV、Line Music、愛奇藝。
+              ul
+                p 注意事項：
+                li 1.   本活動適用對象為所有台新銀行信用卡(不含VISA金融卡)。
+                li 2.  本活動限活動期間內於全臺指定電影院/書店/藝文購票刷台新信用卡單筆達指定金額，且交易日須於2020/7/22~2020/9/30。
+                li
+                  | 3.  指定電影院/書店/藝文購票共計34家：
+                  ul
+                    li
+                      | (1). 電影院：新光、威秀、國賓、秀泰、喜樂、美麗華、美麗新、喜滿客、in89、新月、親親、總督、中影屏東影城、台南真善美劇院、梅花數位、真善美劇院、哈拉影城、鴻金寶
+                    li (2). 書店：誠品、金石堂、墊腳石、三民書局、金玉堂、敦煌
+                    li
+                      | (3).藝文購票：國家表演藝術中心國家兩廳院、寬宏藝術、拓元售票、牛耳購票、ｉＮＤＩＥＶＯＸ、ｕｄｎ售票網 、雲門舞集、國家表演藝術中心臺中國家歌劇、KKTIX華娛、年代售票
+                li
+                  | 4.  限折抵數位影音通路(透過電信公司、iTunes支付除外)：Netflix、KKBOX(含KKBOX Prime、KKTV)、Spotify、Li TV、CATCHPLAY+、遠傳friDay音樂、Line TV、Line Music、愛奇藝。
+                li
+                  | 5.  活動登錄:正卡持卡人須於2020/9/1(二)上午10點00分起至2020/9/30(三)凌晨23點59分於台新官網或台新卡得利(CARDaily)APP活動登錄區中『娛樂及影城』登錄或致電台新銀行客服登錄，活動期間僅須登錄一次；本活動限量登錄20,000名，額滿關閉活動登錄功能。將依登錄有效資格且符合活動門檻之登錄先後順序作為回饋依據，逾期恕不接受補登。
+                li
+                  | 6.   本活動每歸戶正卡人ID上限刷卡金100元，正、附卡合併計算，統一回饋予正卡持卡人，刷卡金限折抵109/11/1~110/1/31指定數位影音通路消費，未折抵刷卡金將歸零。
+                li
+                  | 7.   倘持卡人發生因簽帳爭議而暫停付款或因其他原因致須退還消費款項或所持信用卡有停卡、掛失不補發、不續卡、遲繳、欠款或違反台新銀行信用卡會員約定條款及其他信用貶落之情事者，即喪失參加本活動資格，無法享有回饋。
+                li 8.   持卡人若因任何理由取消刷卡交易或因簽單爭議致消費金額未達本活動門檻，或持卡人以違反誠信之方式取得本活動回饋者，台新銀行得取消回饋資格，不另行通知。 
+                li
+                  | 9.   本活動詳細內容，請參閱網站(www.taishinbank.com.tw)公告，其他未盡事宜，悉依台新銀行信用卡會員約定條款辦理。台新銀行保留隨時變更活動及審核持卡人參加活動資格之權利。
+    .footer-bg
+      footer
+        .selection1
+          img.copyRight(src='./img/copyright-sign.png')
+          p
+            | 版權所有 
+          span.logo 
+            img(src='./img/footerLogo.svg')
+          p 永豐銀行
+        .selection1
+          p 隱私權聲明
+
+        //- .selection2
+          
+            
+    // js
+    script(src='./js/lib/jquery.min.js')
+    script(src='./js/lib/gsap.min.js')
+    //- script(src='./js/index.js')

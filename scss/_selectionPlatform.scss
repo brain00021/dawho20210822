@@ -1,0 +1,430 @@
+
+.selectionPlatform-bg-wrapper{
+  background:url('../img/selection-platform-bg.svg') no-repeat top center;
+  background-size: 2048px 1270px;
+  position: relative;
+  overflow: hidden;
+  top: -130px;
+  padding-top:130px;
+  padding-bottom:200px;
+  @include pad {
+    background:url('../img/selection-platform-pad-bg.svg') no-repeat top center;
+    background-size: cover;
+  }
+  @include mobile{
+    background:url('../img/selection-platform-mob-bg.svg') no-repeat top center;
+    background-size: cover;
+  }
+  .red-tree{
+    position: absolute;
+    margin:auto;
+    top: 0;
+    left:0;
+    @include pad {
+      left:-120px;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+  .orange-tree{
+    position: absolute;
+    margin:auto;
+    bottom:0px;
+    right:-100px;
+    z-index: 2;
+    @include pad {
+      right:-100px;
+      bottom:-100px;
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+}
+#selectionPlatform-title {
+  @extend #selectionDetail-title;
+  height:auto;
+
+}
+#selectionPlatform-description{
+  position: relative;
+  min-height: 380px;
+  margin-top:150px;
+  @include mobile{
+    margin-top:0;
+  }
+}
+#selectionPlatform-description-innerWrapper{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.selectionPlatform-stamp{
+  @include size(1226px,260px);
+  position: absolute;
+  bottom:10px;
+  left:0;
+  img{width:100%}
+  @include pad{
+    @include size(768px,155px);
+    margin:auto;
+  }
+  @include mobile {
+    display:none;
+  }
+}
+.role-card{
+  position: relative;
+  width: 360px;
+  height: 200px;
+  border-radius: 15px;
+  top:30px;
+  // padding:5px;
+  transform-style: preserve-3d;//关键代码
+  transition: all 0.5s;
+  overflow: hidden;
+  @include pad {
+    @include size(auto,auto);
+
+  }
+  .role-detail-front{
+    opacity: 1;
+    transition: transform 5s;
+  }
+  .role-detial-bg{
+    transform-style: preserve-3d;//关键代码
+    background-color: purple;
+    transform: rotateY(180deg);
+    // visibility: hidden;
+    position: absolute;
+    margin:auto;
+    top:0;
+    left:0;
+    right:0;
+    @include size(100%,100%);
+    border-radius: 15px;
+    backface-visibility: hidden;//关键代码
+
+  }
+  .role-detial{
+    transform-style: preserve-3d;//关键代码
+    transition: transform 1s;
+    line-height: 0;
+    margin-top:10px;
+    text-align: center;
+  }
+  h3{
+    padding:5px;
+    border-radius: 15px;
+    font-size: 22px;
+    @include pad {
+      font-size: 18px;
+    }
+  }
+  .quate{
+    display: inline-block;
+    @include size(23px,auto);
+    position: relative;
+    font-family: STYuanti-TC;
+    font-size: 53.5px;
+    color:#fff;
+    &:first-child{
+      top:25px;
+    }
+    &:last-child {
+      transform:scaleY(-1);
+    }
+  }
+  .title{
+    display: inline;
+    background:#fff;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 36px;
+    padding:5px;
+    border-radius: 15px;
+    text-align: center;
+    color: #18336d;
+    @include pad {
+      font-size:12px;
+    }
+    b{
+      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      color: #e24d34;
+      font-weight: bold;
+      font-size:26px;
+    }
+  }
+  a{
+    display: block;
+    text-align:center;
+    color:#fff;
+    margin-top:15px;
+    position: absolute;
+    text-decoration:none;
+    @include size(150px,50px);
+    margin:auto;
+    z-index:50;
+    bottom:5px;
+    right:0;
+    left:0;
+    // text-shadow: -1px 0 #b9711b, 0 1px #b9711b, 1px 0 #b9711b, 0 -1px #b9711b;
+  }
+
+}
+.role-bg{
+  position:relative;
+  z-index: 2;
+}
+.role{
+  cursor: pointer;
+  @include mobile {
+    &:after{
+      content:'';
+      display:block;
+      position: absolute;
+      background:url('../img/selection-platform-stamp.svg') no-repeat center center;
+      background-size: 100%;
+      @include size(375px,120px);
+      bottom: 0;
+      // transform: translateX(25%);
+      left:-25%;
+    }
+  }
+}
+#role1{
+  position: relative;
+  h3{
+    background:#2f842c;
+  }
+  .role-card{
+    background-color:#9dcd9a;
+    // left:100px;
+    // @include size(361px,197px);
+
+    .role-detail-front{
+      top:0;
+      left:0;
+      position: absolute;
+      @include size(100%,100%);
+      background:url('../img/platform-role1-card.png') no-repeat center center;
+      background-size:100%;
+      @include pad {
+        background:url('../img/platform-role1-pad-card.png') no-repeat center center;
+        background-size:100%;
+      }
+    }
+    .role-detial-bg{
+      background-color:#9dcd9a;
+    }
+    @include pad {
+      @include size(252px,200px);
+  
+    }
+  }
+  .role-bg{
+    position: relative;
+    @include size(367px,278px);
+    background:url('../img/selection-platform-role1.svg') no-repeat center center;
+    background-size: 100%;
+    left:-100px;
+    
+    @include pad{
+      @include size(252px,195px);
+     
+    }
+    @include mobile{
+      left:-60px;
+    }
+  }
+}
+
+#role2{
+  position: relative;
+  @include web{
+    &:hover{
+      .role-detail-front{
+        background:url('../img/platform-role2-card-hover.png') no-repeat center center;
+        background-size:100%;
+      }
+      .role-bg{
+        @include size(334px,268px);
+        background:url('../img/selection-platform-role2-hover.svg') no-repeat center center;
+        background-size: 100%;
+        bottom:11px;
+      }
+      .role-card{
+        top:0;
+      }
+    }
+  }
+  .role-detail-front{
+    position: absolute;
+    top:0;
+    left:0;
+    @include size(100%,100%);
+    background:url('../img/platform-role2-card.png') no-repeat center center;
+    background-size:100%;
+    @include pad {
+      background:url('../img/platform-role2-pad-card.png') no-repeat center center;
+      background-size:100%;
+    }
+  }
+  h3{
+    background:#b9711b;
+  }
+  .role-card{
+    // background-color:#f3ab55;
+    // left:106px;
+    width: 320px;
+    height: 200px;
+    .role-detial-bg{
+      background-color:#f3ab55;
+    }
+    @include pad {
+      @include size(224px,200px);
+    }
+  }
+  .role-bg{
+    position: relative;
+    left:-80px;
+    @include size(334px,257px);
+    background:url('../img/selection-platform-role2.svg') no-repeat center center;
+    background-size: 100%;
+    // transition:all .5s ease;
+    @include pad{
+      @include size(252px,195px)
+    }
+
+  }
+}
+
+#role3{
+  position: relative;
+  // left:-90px;
+  .role-detail-front{
+    position: absolute;
+    top:0;
+    left:0;
+    @include size(100%,100%);
+    background:url('../img/platform-role3-card.png') no-repeat center center;
+    background-size:100%;
+    @include pad {
+      background:url('../img/platform-role3-pad-card.png') no-repeat center center;
+      background-size:100%;
+    }
+  }
+  @include web{
+    &:hover{
+      .role-detail-front{
+        background:url('../img/platform-role3-card-hover.png') no-repeat center center;
+        background-size:100%;
+      }
+      .role-bg{
+        @include size(275px,337px);
+        background:url('../img/selection-platform-role3-hover.svg') no-repeat center center;
+        background-size: 100%;
+        bottom:11px;
+        margin-bottom:-11px;
+      }
+      .role-card{
+        top:0;
+      }
+    }
+  }
+  h3{
+    background:#bc454c;
+  }
+  .role-card{
+    // background-color:#fa7880;
+    // left:106px;
+    width: 320px;
+    height: 200px;
+    .role-detial-bg{
+      background-color:#fa7880;
+    }
+    @include pad {
+      @include size(224px,200px);
+    }
+  }
+  .role-bg{
+    position:relative;
+    left:80px;
+    @include size(275px,326px);
+    background:url('../img/selection-platform-role3.svg') no-repeat center center;
+    background-size: 100%;
+    @include pad{
+      @include size(184px,229px)
+    }
+    @include mobile{
+      left:55px;
+    }
+  }
+  a{
+
+    // text-shadow: -1px 0 #bc454c, 0 1px #bc454c, 1px 0 #bc454c, 0 -1px #bc454c;
+  }
+}
+
+.bird{
+  @include size(162px,84px);
+  // background: url('../img/bird-1.svg') no-repeat center center;
+  position:absolute;
+  top:0;
+  right:0;
+  animation: bird 4s linear infinite;
+  @include pad {
+    @include size(113px,59px);
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+    top:180px;
+    left:15px;
+    animation: bird 4s linear infinite;
+  }
+  @include mobile {
+    @include size(80px,59px);
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+    margin:auto;
+    top:208px;
+    left:-300px;
+    bottom:0;
+    animation: bird 4s linear infinite;
+  }
+}
+
+@keyframes bird {
+  0%{
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+  }
+  4%{
+    background: url('../img/bird-2.svg') no-repeat center center;
+    background-size: 100%;
+  }
+  8%{
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+  }
+  12%{
+    background: url('../img/bird-2.svg') no-repeat center center;
+    background-size: 100%;
+  }
+  13%{
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+  }
+  100%{
+    background: url('../img/bird-1.svg') no-repeat center center;
+    background-size: 100%;
+  }
+
+}

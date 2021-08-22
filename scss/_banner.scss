@@ -1,0 +1,241 @@
+.banner-bg-wrapper {
+  background-size: 100%;
+  position: relative;
+  padding-top: 10px;
+  overflow: hidden;
+
+  @include pad {
+    background: url("../img/bg-banner-pad.svg") center 100% repeat-x;
+    background-size: 100%;
+  }
+  @include mobile {
+    background: url("../img/bg-banner-mob.svg") 50% 130% repeat-x;
+    // background-size: 375px 189px;
+  }
+  // padding:inherit;
+  // .bg-tree{
+  //   position: absolute;
+  //   bottom:0;
+  //   background:url('../img/banner-tree-bg.svg')  center 80% no-repeat;
+  //   background-size: 2448px  523px;
+  //   min-height: 523px;
+  //   width:100%;
+  // }
+  // .bg-hill{
+  //   position: absolute;
+  //   bottom:0;
+  //   background:url('../img/banner-bottom-bg.svg') no-repeat bottom center;
+  //   background-size: 2448px  115px;
+  //   min-height: 115px;
+  //   width:100%;
+  // }
+}
+.bannner {
+  margin-top: 0px;
+}
+#banner {
+  display: flex;
+}
+//slogan
+.slogan-wrapper {
+  width: 50%;
+  position: relative;
+  margin: auto;
+  z-index: 10;
+  margin-top: 0px;
+}
+.music-icon {
+  z-index: 3;
+  width: 55px;
+  height: 60px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  @include pad {
+    width: 33px;
+    height: 40px;
+  }
+  @include mobile {
+    width: 21px;
+    height: 30px;
+  }
+}
+.music-left-icon {
+  @extend .music-icon;
+  top: 20px;
+  left: 0;
+}
+.music-right-icon {
+  @extend .music-icon;
+  top: 50px;
+  right: 0;
+}
+.slogan {
+  position: relative;
+  z-index: 2;
+  width: 500px;
+  height: 124px;
+  margin-bottom: 25px;
+  // @include pad {
+  //   width: 542px;
+  //   height: 137px;
+  // }
+  // @include mobile {
+  //   width: 375px;
+  //   height: 100px;
+  // }
+  img {
+    width: 100%;
+  }
+  // margin: auto;
+}
+.slogan2 {
+  width: 509px;
+  height: 100px;
+  // margin: 26.7px 257px 29px 42px;
+  font-family: "Noto Serif TC", serif;
+  font-size: 26px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.92;
+  letter-spacing: 2px;
+
+  margin-bottom: 25px;
+  color: #cc9f50;
+  // animation: flyingbird 5s infinite ease-in-out;
+  @include pad {
+    width: 734px;
+    height: 83px;
+    top: 30px;
+    background: url("../img/slogan2-mob.png") no-repeat center center;
+    background-size: 100%;
+  }
+  @include mobile {
+    width: 378px;
+    height: 41px;
+    margin: auto;
+    // left:-20%;
+  }
+  img {
+    width: 100%;
+  }
+}
+.slogan3 {
+  background: #000;
+  color: #fff;
+  padding: 12px 15px 12px 15px;
+  width: 276px;
+  height: 138px;
+  span {
+    display: block;
+
+    &:nth-child(1) {
+      font-size: 18px;
+      line-height: 38px;
+      letter-spacing: 1.8px;
+    }
+    &:nth-child(2) {
+      font-size: 22px;
+      line-height: 38px;
+      letter-spacing: 2px;
+    }
+    &:nth-child(3) {
+      color: #cc9f50;
+      font-size: 18px;
+      line-height: 38px;
+      letter-spacing: 2px;
+      display: inline-block;
+      width: 100%;
+      border-top: 1px solid #cc9f50;
+    }
+  }
+}
+
+.gelatine {
+  animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}
+// @keyframes flyingbird {
+//   25% {
+//     transform: translateY(-50px);
+//   }
+//   50% {
+//     transform: translateY(-10px);
+//   }
+//   75% {
+//     transform: translateY(-50px);
+//   }
+// }
+.concern-wrapper {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  @include pad {
+    height: 437px;
+  }
+  @include mobile {
+    height: 400px;
+  }
+}
+.conern-platform {
+  position: absolute;
+  z-index: 5;
+  bottom: 15px;
+  left: 50px;
+  width: 1461px;
+  height: 551px;
+  img {
+    width: 100%;
+  }
+  @include pad {
+    width: 768px;
+    height: 291px;
+    bottom: 40px;
+    left: 0px;
+  }
+  @include mobile {
+    width: 690px;
+    height: 262px;
+    left: -50%;
+    bottom: 70px;
+  }
+}
+.conern-dancefan {
+  position: absolute;
+  z-index: 5;
+  bottom: 0px;
+  left: -15px;
+  width: 556px;
+  height: 282px;
+  @include pad {
+    width: 269px;
+    height: 188px;
+    left: -80px;
+    bottom: 0;
+  }
+  @include mobile {
+    width: 338px;
+    height: 169px;
+    bottom: 10px;
+    left: -120px;
+  }
+  img {
+    width: 100%;
+  }
+}
