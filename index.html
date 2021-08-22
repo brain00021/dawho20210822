@@ -18,12 +18,10 @@
     <link rel="stylesheet" href="./css/all.css">
   </head>
   <!-- 導覽列-->
-  <body>
+  <body><a class="topNav"><img src="./img/dawho-side-logo.png">
+      <p>我要當<br>DAWHO</p></a>
     <nav class="header">
-      <div class="header-wrapper">
-        <input id="menu-toggle" type="checkbox" onclick="handleClick(this);">
-        <label for="menu-toggle"><span></span><span></span><span></span></label><a class="logo" href="index.html"><img src="./img/nav-logo.png" alt="台北富邦銀行"></a>
-      </div>
+      <div class="header-wrapper"><a class="logo" href="index.html"><img src="./img/nav-logo.png" alt="台北富邦銀行"></a></div>
     </nav>
     <!-- 下方區域-->
     <section class="main">
@@ -43,7 +41,7 @@
         <div class="main-wrapper">
           <div id="selectionCoupon">
             <div id="selectionCoupon-description">
-              <div id="selectionCoupon-description-innerWrapper"><a class="coupon" id="coupon1" href="https://mkp-tsbank.cdn.hinet.net/TsCms/marketing/expose/WM_20200617141221172/index.html" target="_blank">
+              <div id="selectionCoupon-description-innerWrapper"><a class="active coupon" id="coupon1" href="https://mkp-tsbank.cdn.hinet.net/TsCms/marketing/expose/WM_20200617141221172/index.html" target="_blank">
                   <h3>首次換匯的新舞伴</h3>
                   <div class="detail">
                     <p>全家咖啡乙杯<span>(限量5,000名)</span></p>
@@ -58,33 +56,58 @@
       </div>
       <div class="selectionPlatform-bg-wrapper">
         <div class="main-wrapper">
-          <div class="bird"></div>
           <div id="selectionPlatform">
-            <div id="selectionPlatform-title">
-              <div class="title"><img src="./img/selection-platform-title.svg"></div>
-            </div>
             <div id="selectionPlatform-description">
               <div id="selectionPlatform-description-innerWrapper">
                 <div class="role" id="role1">
-                  <div class="role-card">
-                    <div class="role-detail-front"></div>
-                    <div class="role-detial-bg"> </div>
+                  <div class="role-wrapper">
+                    <div class="role-title">
+                      <h3 class="sub-title">首部曲</h3>
+                      <h3 class="main-title">登錄</h3>
+                    </div>
+                    <div class="role-descritption">
+                      <div class="detail">
+                        <h4>
+                          活動期間內完成首次換匯登錄</h4>
+                        <h4>(限量5,000名)</h4>
+                        <h6>2021/09/01下午2點起</h6>
+                        <h6>開放登錄</h6>
+                      </div><a class="btn" href="">
+                        <p>立即<br>登入</p></a>
+                    </div>
                   </div>
-                  <div class="role-bg"></div>
                 </div>
                 <div class="role" id="role2">
-                  <div class="role-card">
-                    <div class="role-detail-front"><a href="https://mkp-tsbank.cdn.hinet.net/tscccms/promotion/detail/WM_20200623090422153" target="_blank"> </a></div>
-                    <div class="role-detial-bg"> </div>
+                  <div class="role-wrapper">
+                    <div class="role-title">
+                      <h3 class="sub-title">二部曲</h3>
+                      <h3 class="main-title">綁定</h3>
+                    </div>
+                    <div class="role-descritption">
+                      <div class="detail">
+                        <h4>完成永豐銀行LINE<br>官方帳號個人化<br>實名綁定者</h4>
+                      </div><a class="btn" href=""><img class="bankImg" src="./img/bank-QrRcode.png">
+                        <p class="small">綁定LINE</p></a>
+                    </div>
                   </div>
-                  <div class="role-bg"></div>
                 </div>
                 <div class="role" id="role3">
-                  <div class="role-card">
-                    <div class="role-detail-front"><a href="https://taishin.tw/cardevent/?utm_source=taishinweb&amp;utm_medium=click&amp;utm_campaign=2020_promo" target="_blank"></a></div>
-                    <div class="role-detial-bg"> </div>
+                  <div class="role-wrapper">
+                    <div class="role-title">
+                      <h3 class="sub-title">三部曲</h3>
+                      <h3 class="main-title">換匯</h3>
+                    </div>
+                    <div class="role-descritption">
+                      <div class="detail">
+                        <h4>
+                          活動期間內完成首次換匯登錄</h4>
+                        <h4>(限量5,000名)</h4>
+                        <h6>2021/09/01下午2點起</h6>
+                        <h6>開放登錄</h6>
+                      </div><a class="btn" href="">
+                        <p>立即<br>登入</p></a>
+                    </div>
                   </div>
-                  <div class="role-bg"></div>
                 </div>
               </div>
             </div>
@@ -94,20 +117,33 @@
       <div class="selectionDetail-bg-wrapper">
         <div class="main-wrapper">
           <div id="selectionDetail">
-            <div id="selectionDetail-title">
-              <div class="title"><img src="./img/selection-detail-title.svg"></div>
-            </div>
             <div id="selectionDetail-description">
               <div id="selectionDetail-description-innerWrapper">
-                <h1>看電影、演唱會、藝文表演、買書，刷台新回饋享不盡</h1>
-                <div class="data">
-                  <p>活動日期：109/7/22~109/9/30</p>
+                <div class="top">
+                  <div class="detail1"><span class="smallTitle">*註1</span>
+                    <h4>「首次換匯的新舞伴」定義：於2019/06/17~2021/08/31，永豐DAWHO新臺幣帳戶未曾於網路銀行 / 行動銀行APP / DAWHO APP 等進行線上換匯交易者。</h4>
+                  </div>
+                  <div class="detail2"> <span class="smallTitle">*註2</span>
+                    <h4>「<span class="gold">最懂換匯的舞王舞后</span>」定義：於2019/06/17~2021/08/31，永豐DAWHO新臺幣帳戶曾於網路銀行/行動銀行APP/DAWHO APP等進行線上換匯交易者。</h4>
+                  </div>
                 </div>
-                <p>活動說明：刷台新信用卡於指定藝文通路單筆消費滿NT$1,000(含)贈100元刷卡金 （刷卡金限折抵指定數位影音通路消費）。</p>
-                <div class="btn1" id="btn-detail">活動詳情</div>
+                <div class="bottom">
+                  <p>*本活動不適用永豐金控及其子公司員工。</p>
+                  <p>*換匯需以DAWHO數位帳戶之新臺幣帳戶使用DAWHO APP進行以新臺幣換匯外幣達門檻，</p>
+                  <p>並於2021/09/30 23：59前DAWHO數位帳戶外幣存款大於0，始符合抽獎資格。</p>
+                </div>
               </div>
-              <div id="selectionDetail-stamp"><img src="./img/selection-detail-stamp.svg"></div>
-              <div id="selectionDetail-description-bg"></div>
+            </div>
+            <div id="extra-banner"><span class="smallTitle">
+                 外<br>傳</span>
+              <div class="container">
+                <h6>DAWHO美金活存最高<span class="red">1%</span></h6><a class="btnMore">了解更多</a>
+              </div>
+            </div>
+            <div id="btn-detail">
+              <div class="small-tool"><img src="./img/btn-line.png" alt=""><img class="plus" src="./img/btn-plus.png"></div>
+              <p>注意事項 </p>
+              <div class="small-tool"><img class="plus" src="./img/btn-plus.png"><img src="./img/btn-line.png" alt=""></div>
             </div>
           </div>
         </div>
@@ -117,42 +153,31 @@
           <div class="main-wrapper">
             <div class="dialog-btn" id="dialog-btn"><img src="img/dialog-close.svg"></div>
             <div class="dialog-content">
-              <p>活動內容：</p><br>
-              <p>活動期間內刷台新信用卡於指定藝文通路單筆消費滿NT$1,000(含)贈100元刷卡金 ，<span class="text-underline">刷卡金限折抵109/11/1~110/1/31指定數位影音通路消費，未折抵刷卡金將歸零。</span>(限量登錄20,000份，正附卡合併計算，每歸戶正卡人ID上限刷卡金100元)</p>
-              <p>指定藝文通路：</p>
-              <div class="card-wrapper">
-                <div class="card">
-                  <div class="th">電影院</div>
-                  <div class="tbody">新光、威秀、國賓、秀泰、喜樂、美麗華、美麗新、喜滿客、in89、新月、親親、總督、中影屏東影城、台南真善美劇院、梅花數位、真善美劇院、哈拉影城、鴻金寶</div>
-                </div>
-                <div class="card">
-                  <div class="th">藝文購票</div>
-                  <div class="tbody">國家表演藝術中心國家兩廳院、寬宏藝術、拓元售票、牛耳購票、ｉＮＤＩＥＶＯＸ、ｕｄｎ售票網 、雲門舞集、國家表演藝術中心臺中國家歌劇、KKTIX華娛、年代售票</div>
-                </div>
-                <div class="card">
-                  <div class="th">書店</div>
-                  <div class="tbody">誠品、金石堂、墊腳石、三民書局、金玉堂、敦煌</div>
-                </div>
+              <div class="title"><img src="img/dialog-line.png"><img class="dot1" src="img/dialog-dot.png">
+                <p>注意事項</p><img class="dot" src="img/dialog-dot.png"><img src="img/dialog-line.png">
               </div>
-              <p>限折抵數位影音通路(透過電信公司、iTunes支付除外)：</p>
-              <p>Netflix、KKBOX(含KKBOX Prime、KKTV)、Spotify、Li TV、CATCHPLAY+、遠傳friDay音樂、Line TV、Line Music、愛奇藝。</p>
-              <ul>
-                <p>注意事項：</p>
-                <li>1.   本活動適用對象為所有台新銀行信用卡(不含VISA金融卡)。</li>
-                <li>2.  本活動限活動期間內於全臺指定電影院/書店/藝文購票刷台新信用卡單筆達指定金額，且交易日須於2020/7/22~2020/9/30。</li>
-                <li>3.  指定電影院/書店/藝文購票共計34家：
-                  <ul>
-                    <li>(1). 電影院：新光、威秀、國賓、秀泰、喜樂、美麗華、美麗新、喜滿客、in89、新月、親親、總督、中影屏東影城、台南真善美劇院、梅花數位、真善美劇院、哈拉影城、鴻金寶</li>
-                    <li>(2). 書店：誠品、金石堂、墊腳石、三民書局、金玉堂、敦煌</li>
-                    <li>(3).藝文購票：國家表演藝術中心國家兩廳院、寬宏藝術、拓元售票、牛耳購票、ｉＮＤＩＥＶＯＸ、ｕｄｎ售票網 、雲門舞集、國家表演藝術中心臺中國家歌劇、KKTIX華娛、年代售票</li>
+              <ul class="description">
+                <li>1.  參加本活動之帳戶持有人須於2021/09/30 23:59前登錄活動(首次換匯的新舞伴登錄名額上限5,000名；最懂換匯的舞王舞后登錄名額上限2,000名)，並完成永豐LINE官方帳號個人化實名綁定(含原先已綁定者)，並同時符合活動門檻之成功交易為依據，始符合回饋資格，逾期未登錄或未完成實名綁定者，恕無法補登參加。每一自然人限參加一項活動並僅限一次回饋資格。活動將於2021/11/15前由永豐LINE官方帳號以「推播訊息」方式，將中獎訊息發送至得獎者對話視窗。推播得獎訊息前，若因封鎖或解除綁定以致未能取得獎項者，本行恕不補發。</li>
+                <li>2.  符合「首次換匯的新舞伴」限量回饋名單以成功登錄且同時符合本活動條件為準，依序回饋至額滿7,000名為止。僅完成登錄或非DAWHO客戶均不符合獲贈資格，查詢時間與公告時間仍會有落差，以本行實際接受登錄之情形為準。</li>
+                <li>3.  符合「最懂換匯的舞王舞后」限量回饋名單以成功登錄且同時符合本活動條件為準，本活動將於2021年11月15日前由本行以電腦隨機抽出中獎名單並公告於本活動頁，其抽獎、中獎或兌獎紀錄均以本行電腦系統紀錄為準，每人至多一次中獎機會。活動參與者須同意且授權永豐銀行於獲獎時公開部分姓名、部分身分證字號，敬請關注相關公告。</li>
+                <li>4. 「首次換匯的新舞伴」定義為於2019/06/17~2021/08/31間，ID下全部臺幣帳號均未曾進行網路銀行/行動銀行APP/大戶APP等進行線上換匯交易者，以下交易範例(包含但不限於)為不適用本活動 :
+                  <ul> 
+                    <li>A 參加人為DAWHO且持有永豐實體帳戶，並於2019/11/30曾於行動銀行APP換匯成功者。</li>
+                    <li>B 參加人曾為永豐實體帳戶(目前實體帳戶已銷戶)，曾於2020/10/01於MMA金融交易網換匯成功者。</li>
                   </ul>
                 </li>
-                <li>4.  限折抵數位影音通路(透過電信公司、iTunes支付除外)：Netflix、KKBOX(含KKBOX Prime、KKTV)、Spotify、Li TV、CATCHPLAY+、遠傳friDay音樂、Line TV、Line Music、愛奇藝。</li>
-                <li>5.  活動登錄:正卡持卡人須於2020/9/1(二)上午10點00分起至2020/9/30(三)凌晨23點59分於台新官網或台新卡得利(CARDaily)APP活動登錄區中『娛樂及影城』登錄或致電台新銀行客服登錄，活動期間僅須登錄一次；本活動限量登錄20,000名，額滿關閉活動登錄功能。將依登錄有效資格且符合活動門檻之登錄先後順序作為回饋依據，逾期恕不接受補登。</li>
-                <li>6.   本活動每歸戶正卡人ID上限刷卡金100元，正、附卡合併計算，統一回饋予正卡持卡人，刷卡金限折抵109/11/1~110/1/31指定數位影音通路消費，未折抵刷卡金將歸零。</li>
-                <li>7.   倘持卡人發生因簽帳爭議而暫停付款或因其他原因致須退還消費款項或所持信用卡有停卡、掛失不補發、不續卡、遲繳、欠款或違反台新銀行信用卡會員約定條款及其他信用貶落之情事者，即喪失參加本活動資格，無法享有回饋。</li>
-                <li>8.   持卡人若因任何理由取消刷卡交易或因簽單爭議致消費金額未達本活動門檻，或持卡人以違反誠信之方式取得本活動回饋者，台新銀行得取消回饋資格，不另行通知。 </li>
-                <li>9.   本活動詳細內容，請參閱網站(www.taishinbank.com.tw)公告，其他未盡事宜，悉依台新銀行信用卡會員約定條款辦理。台新銀行保留隨時變更活動及審核持卡人參加活動資格之權利。</li>
+                <li>5. 「最懂換匯的舞王舞后」定義為於2019/06/17~2021/08/31間，ID下全部臺幣帳號曾進行網路銀行/行動銀行APP/大戶APP等進行線上換匯交易者。</li>
+                <li>6.  本活動換匯交易係指使用DAWHO數位帳戶於永豐網路銀行、行動銀行或DAWHO APP承作涉及新臺幣換匯外幣之買賣外幣交易，不包含使用新臺幣帳戶扣帳之預約外幣現鈔交易及匯出匯款(含Visa直接通)交易。</li>
+                <li>7.  本活動之有效登錄及交易紀錄，均以本行電腦系統紀錄與本行認定為準，經本行檢視不符合得獎資格者，或參加人有其他不正當或非法行為，本行有權取消其領獎資格。若有任何因為電腦、網路、電話、技術或其他不可歸責於本行之事由，而使參加人所登錄之資料有遺失、錯誤、無法辨識或毀損情況，本行不負任何法律責任，參加人亦不得因此異議。</li>
+                <li>8.  本活動贈送之贈品恕無法要求折換現金、轉讓或提領。</li>
+                <li>9.  本行有權檢視各項交易，若參加人有違反活動注意事項之行為或涉及不正當得利及非法行為，或參加人得獎後如於獎項寄送前帳戶狀態為銷戶、警示、帳戶未正式啟用皆視為非有效DAWHO數位帳戶，及未維持永豐LINE官方帳號個人化實名綁定有效狀態(未解綁、好友封鎖)，將喪失活動參與資格。</li>
+                <li>10. 如遇產品缺貨或不可抗力之事由導致贈品內容須變更，本行有權變更贈品，改由等值商品取代之。</li>
+                <li>11. 參加本活動之得獎人(若為中華民國境內居住之個人)無論得獎金額多寡，本行將依各類所得扣繳率標準，就回饋金所得代為申報，並開立所得稅扣繳憑單；若得獎人不願接受扣繳憑單，本行將取消得獎資格。</li>
+                <li>12. 承作外匯存款須承擔日後兌換為新臺幣或其他幣別可能產生之匯兌風險，於承作時應審慎評估。</li>
+                <li>13. 買賣外幣/轉帳交易時間：臺灣地區營業時間09:00~23:00。<br>透過網路銀行辦理涉及新臺幣結匯且單筆/累計達等值新臺幣50萬元，服務時間為09:00~15:30。</li>
+                <li>14. 參加人於參加活動時，即視為同意接受本活動注意事項規範；參加人得獎後如經發現資格不符合或違反本活動規定事項者，本行保有取消其中獎資格之權利。</li>
+                <li>15. 本活動不適用永豐金控及其子公司員工。</li>
+                <li>16. 永豐銀行保留隨時修改、終止或變更本活動之權利，更動之活動時間與內容方式，以本行網站公布為準；若有其他未盡事宜，悉依本行相關規定或解釋為準。</li>
               </ul>
             </div>
           </div>
@@ -173,5 +198,6 @@
     <!-- js-->
     <script src="./js/lib/jquery.min.js"></script>
     <script src="./js/lib/gsap.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

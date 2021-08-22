@@ -4,14 +4,14 @@
   padding-top: 10px;
   overflow: hidden;
 
-  @include pad {
-    background: url("../img/bg-banner-pad.svg") center 100% repeat-x;
-    background-size: 100%;
-  }
-  @include mobile {
-    background: url("../img/bg-banner-mob.svg") 50% 130% repeat-x;
-    // background-size: 375px 189px;
-  }
+  // @include pad {
+  //   background: url("../img/bg-banner-pad.svg") center 100% repeat-x;
+  //   background-size: 100%;
+  // }
+  // @include mobile {
+  //   background: url("../img/bg-banner-mob.svg") 50% 130% repeat-x;
+  //   // background-size: 375px 189px;
+  // }
   // padding:inherit;
   // .bg-tree{
   //   position: absolute;
@@ -105,19 +105,19 @@
   margin-bottom: 25px;
   color: #cc9f50;
   // animation: flyingbird 5s infinite ease-in-out;
-  @include pad {
-    width: 734px;
-    height: 83px;
-    top: 30px;
-    background: url("../img/slogan2-mob.png") no-repeat center center;
-    background-size: 100%;
-  }
-  @include mobile {
-    width: 378px;
-    height: 41px;
-    margin: auto;
-    // left:-20%;
-  }
+  // @include pad {
+  //   width: 734px;
+  //   height: 83px;
+  //   top: 30px;
+  //   background: url("../img/slogan2-mob.png") no-repeat center center;
+  //   background-size: 100%;
+  // }
+  // @include mobile {
+  //   width: 378px;
+  //   height: 41px;
+  //   margin: auto;
+  //   // left:-20%;
+  // }
   img {
     width: 100%;
   }
@@ -185,13 +185,13 @@
 .concern-wrapper {
   position: relative;
   width: 100%;
-  height: 650px;
-  @include pad {
-    height: 437px;
-  }
-  @include mobile {
-    height: 400px;
-  }
+  height: 450px;
+  // @include pad {
+  //   height: 437px;
+  // }
+  // @include mobile {
+  //   height: 400px;
+  // }
 }
 .conern-platform {
   position: absolute;

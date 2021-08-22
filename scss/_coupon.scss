@@ -4,7 +4,7 @@
   // background:url('../img/selection-coupon-bg.svg') no-repeat top center;
   // background-size: cover;
   position: relative;
-  top: -200px;
+  // top: -200px;
   overflow: hidden;
   // padding-bottom:150px;
   // margin-bottom: -410px;
@@ -40,6 +40,7 @@
   cursor: pointer;
   position: relative;
   @include size(489px, 192px);
+  opacity: 0;
   // padding-left: 100px;
   // padding-right: 30px;
   margin: 20px auto;
@@ -70,7 +71,8 @@
       left: 0;
     }
   }
-  &:hover {
+  &:hover,
+  &.active {
     box-shadow: 0 0 15px #fff;
     top: -10px;
     // .icon-wrapper .icon .icon-more {
@@ -165,10 +167,55 @@
     width: 100%;
   }
 }
-.squirrel {
-  @include size(75px, 74px);
-  background: url("../img/squirrel.svg") no-repeat center center;
-  position: absolute;
-  bottom: 300px;
-  left: 10px;
+#extra-banner {
+  width: 740px;
+  height: 112px;
+  display: flex;
+  background-color: #cc9f50;
+  padding: 5px;
+  align-items: center;
+  margin: 20px auto;
+  margin-top: 100px;
+  opacity: 0;
+  .smallTitle {
+    width: 32px;
+    height: 76px;
+    // margin: 12px 18px 15px 0;
+    // font-family: NotoSerifTC;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 38px;
+    margin-right: 5px;
+  }
+
+  .container {
+    flex: 1;
+    background-color: #fdf4e4;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    h6 {
+      font-size: 36px;
+      line-height: 38px;
+      color: #000;
+      // padding-left: 30px;
+      letter-spacing: 3.5px;
+      .red {
+        font-style: italic;
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 38px;
+        color: #ec1d26;
+      }
+    }
+    .btnMore {
+      padding: 10px 30px;
+      border-radius: 23px;
+      background-color: #000;
+      color: #fff;
+    }
+  }
 }

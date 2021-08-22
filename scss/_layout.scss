@@ -2,8 +2,8 @@ body {
   background-color: #d2dcee;
   font-family: "Noto Serif TC", serif;
   overflow-x: hidden;
-  background: url(../img/desktop_BG.jpeg) no-repeat top center;
-  background-size: 100%;
+  background: #000 url(../img/desktop_BG.jpeg) no-repeat top center;
+  background-size: cover;
 }
 
 h1 {
@@ -11,14 +11,14 @@ h1 {
   font-weight: bold;
   letter-spacing: 2.5px;
   text-align: center;
-  color: #18336d;
+  // color: #18336d;
 }
 h2 {
   font-size: 28px;
   font-weight: bold;
   line-height: 1.79;
   letter-spacing: 1px;
-  color: #18336d;
+  // color: #18336d;
 }
 h3 {
   font-size: 24px;
@@ -27,12 +27,7 @@ h3 {
   text-align: center;
   color: #ffffff;
 }
-h4 {
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: #18336d;
-}
+
 h5 {
   font-size: 18px;
   font-weight: bold;
@@ -51,29 +46,17 @@ h6 {
   text-align: center;
   color: #18336d;
 }
-.red-tree {
-  position: absolute;
-  z-index: 0;
-}
-.orange-tree {
-  position: absolute;
-  z-index: 0;
-}
+
 .main {
   // background-color: #a21e00;
   position: relative;
-  // background-size: 3342px 2623px;
-  background-repeat: repeat;
-  background-position-x: center;
-  padding-top: 60px;
-  @include pad {
-    padding-top: 50px;
-  }
+  margin: auto;
   .main-wrapper {
     position: relative;
     // min-height: 800px;
     max-width: 100%;
     width: 1200px;
+
     margin: auto;
 
     // padding-bottom: 154px;
