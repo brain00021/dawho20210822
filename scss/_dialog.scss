@@ -69,6 +69,8 @@
     margin: auto;
     top: 0px;
     bottom: 0;
+    right: 0;
+    left: 0;
     @include mobile {
       @include size(96.5%, 99.5%);
     }

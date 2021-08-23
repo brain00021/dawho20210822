@@ -2083,6 +2083,8 @@ footer .selection2 .logo {
   margin: auto;
   top: 0px;
   bottom: 0;
+  right: 0;
+  left: 0;
 }
 @media (max-width: 768px) {
   .dialog-content:after {
