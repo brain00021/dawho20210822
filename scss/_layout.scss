@@ -4,6 +4,14 @@ body {
   overflow-x: hidden;
   background: #000 url(../img/desktop_BG.jpeg) no-repeat top center;
   background-size: cover;
+  @media only screen and (max-width: 768px) {
+    background: #000 url(../img/mobile_BG.jpeg) no-repeat top center;
+    background-size: 100%;
+  }
+  @media only screen and (max-width: 450px) {
+    background: #000 url(../img/mobile_BG.jpeg) no-repeat top left;
+    background-size: 120%;
+  }
 }
 
 h1 {
@@ -60,11 +68,11 @@ h6 {
     margin: auto;
 
     // padding-bottom: 154px;
-    @include pad {
-      width: 768px;
-    }
+    // @include pad {
+    //   width: 768px;
+    // }
     @include mobile {
-      width: 375px;
+      width: 100%;
     }
   }
 }

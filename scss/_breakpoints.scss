@@ -12,7 +12,7 @@
 }
 
 @mixin mobile {
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     @content;
   }
 }
@@ -23,12 +23,11 @@
   }
 }
 
-
-@mixin size($width,$height){
+@mixin size($width, $height) {
   width: $width;
   height: $height;
 }
 
-*{
+* {
   box-sizing: border-box;
 }

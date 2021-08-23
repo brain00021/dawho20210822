@@ -4,11 +4,8 @@ $(function () {
 
     if (containPos.top < bodyPos) {
       $(targetItem)
-        .removeClass("animate__animated animate__fadeInUp")
+        // .removeClass("animate__animated animate__fadeInUp")
         .addClass("animate__animated animate__fadeInDown");
-    } else {
-      $(targetItem).removeClass("animate__animated animate__fadeInDown");
-      // .addClass("animate__animated animate__fadeInUp");
     }
   };
   $(window)
@@ -19,11 +16,7 @@ $(function () {
 
       scrollAddAnimate(".banner-bg-wrapper", bodyPos, ".slogan-wrapper");
       scrollAddAnimate(".selectionCoupon-bg-wrapper", bodyPos, ".coupon");
-      scrollAddAnimate(
-        "#selectionPlatform-description-innerWrapper",
-        bodyPos,
-        ".role"
-      );
+      scrollAddAnimate("#selectionPlatform", bodyPos, ".role");
       scrollAddAnimate(
         "#selectionDetail-description",
         bodyPos,
@@ -50,7 +43,7 @@ $(function () {
 
       $(item).addClass("active");
       $(item).siblings().removeClass("active");
-      $(".role").removeClass().addClass("role").addClass(item.replace("#", ""));
+      $(".role").removeClass("coupon2 coupon1").addClass(item.replace("#", ""));
       $("#selectionDetail-description-innerWrapper")
         .removeClass()
         .addClass(item.replace("#", ""));

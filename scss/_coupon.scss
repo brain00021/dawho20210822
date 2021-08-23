@@ -31,16 +31,18 @@
   display: flex;
   justify-content: space-between;
   // min-height:500px;
-  @include pad {
-    flex-direction: column;
+  @include mobile {
   }
 }
 .coupon {
   // font-family: 'GenJyuuGothic';
   cursor: pointer;
   position: relative;
-  @include size(489px, 192px);
+  @include size(100%, 100%);
+  max-width: 489px;
+  max-height: 192px;
   opacity: 0;
+  padding: 5.5% 0;
   // padding-left: 100px;
   // padding-right: 30px;
   margin: 20px auto;
@@ -50,10 +52,12 @@
   // @include pad {
   //   margin: 30px auto;
   // }
-  // @include mobile {
-  //   @include size(360px, 210px);
-  //   padding-left: 70px;
-  // }
+  @include mobile {
+    @include size(100%, 100%);
+    // max-width: 385px;
+    // max-height: 150px;
+    // padding-left: 70px;
+  }
   .coupon-btn {
     display: none;
     @include pad {
@@ -89,13 +93,12 @@
   h3 {
     position: relative;
     display: block;
-    margin-top: 62px;
+    // margin-top: 10%;
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: bold;
     @include mobile {
       font-size: 18px;
-      margin-top: 60px;
     }
   }
   .detail {
@@ -113,8 +116,19 @@
       font-size: 18px;
     }
     @include mobile {
-      font-size: 16px;
+      p {
+        font-size: 16px;
+        @media screen and (max-width: 640px) {
+          font-size: 14px;
+          span {
+            font-size: 10px;
+          }
+        }
+      }
       margin-top: 15px;
+      span {
+        font: 12px;
+      }
     }
     .icon-wrapper {
       position: absolute;
@@ -133,18 +147,23 @@
 }
 #coupon1 {
   background: url("../img/coupon-mob-btn.jpeg") no-repeat center center;
-  // background-size: 100%;
+  background-size: 100%;
   z-index: 5;
   @include web {
     // margin-right: 150px;
   }
-  @include pad {
+  @include mobile {
+    background-size: cover;
     // margin-bottom: 50px;
   }
 }
 #coupon2 {
   background: url("../img/coupon-mob-btn2.jpeg") no-repeat center center;
-  // background-size: 100%;
+  background-size: 100%;
+  @include mobile {
+    background-size: cover;
+    // margin-bottom: 50px;
+  }
   h3 {
     color: #000;
   }
@@ -174,9 +193,13 @@
   background-color: #cc9f50;
   padding: 5px;
   align-items: center;
-  margin: 20px auto;
+  margin: 5% auto;
   margin-top: 100px;
   opacity: 0;
+  @include mobile {
+    width: 90%;
+    height: auto;
+  }
   .smallTitle {
     width: 32px;
     height: 76px;
@@ -196,6 +219,7 @@
     align-items: center;
     display: flex;
     justify-content: space-around;
+    min-height: 102px;
     height: 100%;
     h6 {
       font-size: 36px;
@@ -217,5 +241,111 @@
       background-color: #000;
       color: #fff;
     }
+  }
+}
+.role1 {
+  position: relative;
+  .shinyStart {
+    &:nth-child(1) {
+      top: 10px;
+      right: 0;
+    }
+    &:nth-child(2) {
+      bottom: 10px;
+      right: 10px;
+    }
+    &:nth-child(3) {
+      top: 350px;
+      left: -30px;
+
+      // bottom: 0px;
+    }
+  }
+}
+.role2 {
+  position: relative;
+  .shinyStart {
+    &:nth-child(1) {
+      top: 10px;
+      margin: auto;
+      right: 100px;
+      left: 0;
+    }
+    &:nth-child(2) {
+      bottom: 10px;
+    }
+    &:nth-child(3) {
+      top: 350px;
+      right: -30px;
+
+      // bottom: 0px;
+    }
+  }
+}
+.role1 {
+  position: relative;
+  .shinyStart {
+    &:nth-child(1) {
+      top: 10px;
+      right: 0;
+      animation-delay: 0.5s;
+    }
+    &:nth-child(2) {
+      bottom: 40px;
+      animation-delay: 0.2s;
+    }
+    &:nth-child(3) {
+      top: 250px;
+      right: -30px;
+
+      // bottom: 0px;
+    }
+  }
+}
+.shinyStart {
+  animation: shinyStart 1s infinite ease;
+  transform-origin: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  &:nth-child(1) {
+    top: 10px;
+    right: 0;
+  }
+  &:nth-child(2) {
+    bottom: 10px;
+    animation-delay: 0.5s;
+  }
+  &:nth-child(3) {
+    top: 350px;
+    right: -30px;
+    animation-delay: 0.3s;
+
+    // bottom: 0px;
+  }
+}
+@keyframes shinyStart {
+  0% {
+    // transform: rotate(0deg);
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(0.5);
+  }
+
+  50% {
+    transform: scale(1.5);
+    // opacity: 0.2;s
+    // transform: rotate(180deg);
+  }
+
+  70% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    // transform: rotate(360deg);
   }
 }

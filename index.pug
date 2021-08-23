@@ -3,7 +3,7 @@ html
   head
     meta(charset='UTF-8')
     meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    title 台新銀行-Fun膽藝起玩
+    title DAWHO
     link(rel='shortcut icon' type='image/x-icon' href='favicon.ico')
     meta(property='og:type' content='website')
     meta(property='og:locale' content='zh_TW')
@@ -14,15 +14,18 @@ html
     // google font
     link(href='https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap' rel='stylesheet')
     link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
+    link( rel='stylesheet' href="https://unpkg.com/swiper/swiper-bundle.min.css" )
     // style
+
     link(rel='stylesheet' href='./css/all.css')
   // 導覽列
   body
-    a.topNav
-      img(src="./img/dawho-side-logo.png")
-      p 我要當
-        br
-        | DAWHO
+    .web-view
+      a.topNav
+        img(src="./img/dawho-side-logo.png")
+        p 我要當
+          br
+          | DAWHO
     nav.header
       .header-wrapper
         //- input#menu-toggle(type='checkbox' onclick='handleClick(this);')
@@ -93,68 +96,147 @@ html
       .selectionPlatform-bg-wrapper
         .main-wrapper
           #selectionPlatform
-            //- #selectionPlatform-title
-            //-   .title
-            //-     img(src='./img/selection-platform-title.svg')
             #selectionPlatform-description
-              #selectionPlatform-description-innerWrapper
-                #role1.role
-                  .role-wrapper
-                    .role-title
-                      h3.sub-title 首部曲
-                      h3.main-title 登錄
-                    .role-descritption
-                      .detail
-                        h4 活動期間內完成
-                          | 首次換匯登錄
-                        h4 (限量5,000名)
-                        h6 2021/09/01下午2點起
-                        h6 開放登錄
-                      a.btn(href="")
-                        p 立即
-                          br
-                          | 登入
+              .swiper-container.mySwiper.mob-view
+                .swiper-wrapper
+                  .swiper-slide 
+                    .role1.role
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .role-wrapper
+                        .role-title
+                          h3.sub-title 首部曲
+                          h3.main-title 登錄
+                        .role-descritption
+                          .detail
+                            h4 活動期間內完成
+                              | 首次換匯登錄
+                            h4 (限量5,000名)
+                            h6 2021/09/01下午2點起
+                            h6 開放登錄
+                          a.btn(href="")
+                            p 立即登入
 
+                  .swiper-slide
+                    .role2.role
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .role-wrapper
+                        .role-title
+                          h3.sub-title 二部曲
+                          h3.main-title 綁定
+                        .role-descritption
+                          .detail
+                            h4 完成永豐銀行LINE
+                              br 
+                              | 官方帳號個人化
+                              br
+                              | 實名綁定者
+                          a.btn(href="")
+                            //- img.bankImg(src="./img/bank-QrRcode.png")
+                            p 綁定LINE
+                  .swiper-slide
+                    .role3.role
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .shinyStart
+                        img(src='./img/shiny-light.png')
+                      .role-wrapper
+                        .role-title
+                          h3.sub-title 三部曲
+                          h3.main-title 換匯
+                        .role-descritption
+                          .detail
+                            h4 活動期間內完成
+                              | 首次換匯登錄
+                            h4 (限量5,000名)
+                            h6 2021/09/01下午2點起
+                            h6 開放登錄
+                          a.btn(href="")
+                            p 立即登入
 
-                    
-
-                #role2.role
-                  .role-wrapper
-                    .role-title
-                      h3.sub-title 二部曲
-                      h3.main-title 綁定
-                    .role-descritption
-                      .detail
-                        h4 完成永豐銀行LINE
-                          br 
-                          | 官方帳號個人化
-                          br
-                          | 實名綁定者
-                      a.btn(href="")
-                        img.bankImg(src="./img/bank-QrRcode.png")
-                        p.small 綁定LINE
-                #role3.role
-                  .role-wrapper
-                    .role-title
-                      h3.sub-title 三部曲
-                      h3.main-title 換匯
-                    .role-descritption
-                      .detail
-                        h4 活動期間內完成
-                          | 首次換匯登錄
-                        h4 (限量5,000名)
-                        h6 2021/09/01下午2點起
-                        h6 開放登錄
-                      a.btn(href="")
-                        p 立即
-                          br
-                          | 登入
+                .swiper-button-prev
+                .swiper-button-next
+              .web-view
+                #selectionPlatform-description-innerWrapper
+                  .role1.role
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .role-wrapper
+                      .role-title
+                        h3.sub-title 首部曲
+                        h3.main-title 登錄
+                      .role-descritption
+                        .detail
+                          h4 活動期間內完成
+                            | 首次換匯登錄
+                          h4 (限量5,000名)
+                          h6 2021/09/01下午2點起
+                          h6 開放登錄
+                        a.btn(href="")
+                          p 立即
+                            br
+                            | 登入
+                  .role2.role
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .role-wrapper
+                      .role-title
+                        h3.sub-title 二部曲
+                        h3.main-title 綁定
+                      .role-descritption
+                        .detail
+                          h4 完成永豐銀行LINE
+                            br 
+                            | 官方帳號個人化
+                            br
+                            | 實名綁定者
+                        a.btn(href="")
+                          img.bankImg(src="./img/bank-QrRcode.png")
+                          p.small 綁定LINE
+                  .role3.role
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .shinyStart
+                      img(src='./img/shiny-light.png')
+                    .role-wrapper
+                      .role-title
+                        h3.sub-title 三部曲
+                        h3.main-title 換匯
+                      .role-descritption
+                        .detail
+                          h4 活動期間內完成
+                            | 首次換匯登錄
+                          h4 (限量5,000名)
+                          h6 2021/09/01下午2點起
+                          h6 開放登錄
+                        a.btn(href="")
+                          p 立即
+                            br
+                            | 登入
       .selectionDetail-bg-wrapper
         .main-wrapper
           #selectionDetail
-            //- #selectionDetail-title
-            //-   .title
-            //-     img(src='./img/selection-detail-title.svg')
             #selectionDetail-description
               #selectionDetail-description-innerWrapper
                 .top
@@ -179,9 +261,6 @@ html
                 h6 DAWHO美金活存最高
                   span.red 1%
                 a.btnMore 了解更多
-
-            
-            
             #btn-detail
               .small-tool
                 img(src="./img/btn-line.png", alt="")
@@ -190,10 +269,6 @@ html
               .small-tool
                 img.plus(src="./img/btn-plus.png")
                 img(src="./img/btn-line.png", alt="")
-                
-              //- #selectionDetail-stamp
-              //-   img(src='./img/selection-detail-stamp.svg')
-              //- #selectionDetail-description-bg
 
 
 
@@ -253,4 +328,12 @@ html
     // js
     script(src='./js/lib/jquery.min.js')
     script(src='./js/lib/gsap.min.js')
+    script(src='https://unpkg.com/swiper/swiper-bundle.min.js')
+    script.
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
     script(src='./js/index.js')

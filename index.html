@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>台新銀行-Fun膽藝起玩</title>
+    <title>DAWHO</title>
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="zh_TW">
@@ -14,12 +14,14 @@
     <!-- google font-->
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- style-->
     <link rel="stylesheet" href="./css/all.css">
   </head>
   <!-- 導覽列-->
-  <body><a class="topNav"><img src="./img/dawho-side-logo.png">
-      <p>我要當<br>DAWHO</p></a>
+  <body>
+    <div class="web-view"><a class="topNav"><img src="./img/dawho-side-logo.png">
+        <p>我要當<br>DAWHO</p></a></div>
     <nav class="header">
       <div class="header-wrapper"><a class="logo" href="index.html"><img src="./img/nav-logo.png" alt="台北富邦銀行"></a></div>
     </nav>
@@ -58,54 +60,136 @@
         <div class="main-wrapper">
           <div id="selectionPlatform">
             <div id="selectionPlatform-description">
-              <div id="selectionPlatform-description-innerWrapper">
-                <div class="role" id="role1">
-                  <div class="role-wrapper">
-                    <div class="role-title">
-                      <h3 class="sub-title">首部曲</h3>
-                      <h3 class="main-title">登錄</h3>
+              <div class="swiper-container mySwiper mob-view">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"> 
+                    <div class="role1 role">
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="role-wrapper">
+                        <div class="role-title">
+                          <h3 class="sub-title">首部曲</h3>
+                          <h3 class="main-title">登錄</h3>
+                        </div>
+                        <div class="role-descritption">
+                          <div class="detail">
+                            <h4>
+                              活動期間內完成首次換匯登錄</h4>
+                            <h4>(限量5,000名)</h4>
+                            <h6>2021/09/01下午2點起</h6>
+                            <h6>開放登錄</h6>
+                          </div><a class="btn" href="">
+                            <p>立即登入</p></a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="role-descritption">
-                      <div class="detail">
-                        <h4>
-                          活動期間內完成首次換匯登錄</h4>
-                        <h4>(限量5,000名)</h4>
-                        <h6>2021/09/01下午2點起</h6>
-                        <h6>開放登錄</h6>
-                      </div><a class="btn" href="">
-                        <p>立即<br>登入</p></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="role2 role">
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="role-wrapper">
+                        <div class="role-title">
+                          <h3 class="sub-title">二部曲</h3>
+                          <h3 class="main-title">綁定</h3>
+                        </div>
+                        <div class="role-descritption">
+                          <div class="detail">
+                            <h4>完成永豐銀行LINE<br>官方帳號個人化<br>實名綁定者</h4>
+                          </div><a class="btn" href="">
+                            <p>綁定LINE</p></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="role3 role">
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                      <div class="role-wrapper">
+                        <div class="role-title">
+                          <h3 class="sub-title">三部曲</h3>
+                          <h3 class="main-title">換匯</h3>
+                        </div>
+                        <div class="role-descritption">
+                          <div class="detail">
+                            <h4>
+                              活動期間內完成首次換匯登錄</h4>
+                            <h4>(限量5,000名)</h4>
+                            <h6>2021/09/01下午2點起</h6>
+                            <h6>開放登錄</h6>
+                          </div><a class="btn" href="">
+                            <p>立即登入</p></a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="role" id="role2">
-                  <div class="role-wrapper">
-                    <div class="role-title">
-                      <h3 class="sub-title">二部曲</h3>
-                      <h3 class="main-title">綁定</h3>
-                    </div>
-                    <div class="role-descritption">
-                      <div class="detail">
-                        <h4>完成永豐銀行LINE<br>官方帳號個人化<br>實名綁定者</h4>
-                      </div><a class="btn" href=""><img class="bankImg" src="./img/bank-QrRcode.png">
-                        <p class="small">綁定LINE</p></a>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+              <div class="web-view">
+                <div id="selectionPlatform-description-innerWrapper">
+                  <div class="role1 role">
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="role-wrapper">
+                      <div class="role-title">
+                        <h3 class="sub-title">首部曲</h3>
+                        <h3 class="main-title">登錄</h3>
+                      </div>
+                      <div class="role-descritption">
+                        <div class="detail">
+                          <h4>
+                            活動期間內完成首次換匯登錄</h4>
+                          <h4>(限量5,000名)</h4>
+                          <h6>2021/09/01下午2點起</h6>
+                          <h6>開放登錄</h6>
+                        </div><a class="btn" href="">
+                          <p>立即<br>登入</p></a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="role" id="role3">
-                  <div class="role-wrapper">
-                    <div class="role-title">
-                      <h3 class="sub-title">三部曲</h3>
-                      <h3 class="main-title">換匯</h3>
+                  <div class="role2 role">
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="role-wrapper">
+                      <div class="role-title">
+                        <h3 class="sub-title">二部曲</h3>
+                        <h3 class="main-title">綁定</h3>
+                      </div>
+                      <div class="role-descritption">
+                        <div class="detail">
+                          <h4>完成永豐銀行LINE<br>官方帳號個人化<br>實名綁定者</h4>
+                        </div><a class="btn" href=""><img class="bankImg" src="./img/bank-QrRcode.png">
+                          <p class="small">綁定LINE</p></a>
+                      </div>
                     </div>
-                    <div class="role-descritption">
-                      <div class="detail">
-                        <h4>
-                          活動期間內完成首次換匯登錄</h4>
-                        <h4>(限量5,000名)</h4>
-                        <h6>2021/09/01下午2點起</h6>
-                        <h6>開放登錄</h6>
-                      </div><a class="btn" href="">
-                        <p>立即<br>登入</p></a>
+                  </div>
+                  <div class="role3 role">
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="shinyStart"><img src="./img/shiny-light.png"></div>
+                    <div class="role-wrapper">
+                      <div class="role-title">
+                        <h3 class="sub-title">三部曲</h3>
+                        <h3 class="main-title">換匯</h3>
+                      </div>
+                      <div class="role-descritption">
+                        <div class="detail">
+                          <h4>
+                            活動期間內完成首次換匯登錄</h4>
+                          <h4>(限量5,000名)</h4>
+                          <h6>2021/09/01下午2點起</h6>
+                          <h6>開放登錄</h6>
+                        </div><a class="btn" href="">
+                          <p>立即<br>登入</p></a>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -198,6 +282,15 @@
     <!-- js-->
     <script src="./js/lib/jquery.min.js"></script>
     <script src="./js/lib/gsap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
     <script src="./js/index.js"></script>
   </body>
 </html>

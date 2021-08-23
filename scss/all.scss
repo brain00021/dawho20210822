@@ -16,3 +16,33 @@
   // margin-bottom:-410px;
   overflow: hidden;
 }
+.mob-view {
+  display: none !important;
+  @include mobile {
+    display: block !important;
+  }
+}
+.web-view {
+  display: block !important;
+  @include mobile {
+    display: none !important;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
