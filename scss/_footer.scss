@@ -87,6 +87,12 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    a {
+      color: #fff;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
     img.copyRight {
       width: 12px;
       // filter:invert(1);

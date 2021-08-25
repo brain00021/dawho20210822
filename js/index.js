@@ -51,4 +51,5 @@ $(function () {
   };
   tabSetting("#coupon2");
   tabSetting("#coupon1");
+  $("#coupon1").click();
 });

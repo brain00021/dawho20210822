@@ -98,7 +98,7 @@
     letter-spacing: 2px;
     font-weight: bold;
     @include mobile {
-      font-size: 18px;
+      font-size: 17px;
     }
   }
   .detail {
@@ -108,21 +108,26 @@
     letter-spacing: 2px;
     text-align: center;
     color: #cc9f50;
+    display: flex;
+    justify-content: center;
 
     p {
-      font-size: 24px;
+      font-size: 16px;
     }
     span {
-      font-size: 18px;
+      font-size: 12px;
     }
     @include mobile {
       p {
         font-size: 16px;
         @media screen and (max-width: 640px) {
-          font-size: 14px;
-          span {
-            font-size: 10px;
-          }
+          font-size: 12px;
+          padding: 0 5px;
+        }
+      }
+      span {
+        @media screen and (max-width: 640px) {
+          font-size: 12px;
         }
       }
       margin-top: 15px;
@@ -154,18 +159,51 @@
   }
   @include mobile {
     background-size: cover;
+    background-color: #000;
+    background-image: none;
+    &:after {
+      content: "";
+      // @include size(95%, 90%);
+      position: absolute;
+      border: 1px solid #cc9f50;
+      margin: 5px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      align-self: center;
+    }
     // margin-bottom: 50px;
   }
 }
 #coupon2 {
-  background: url("../img/coupon-mob-btn2.jpeg") no-repeat center center;
+  background: url("../img/coupon-web-btn2.jpeg") no-repeat center center;
   background-size: 100%;
   @include mobile {
+    background: url("../img/coupon-mob-btn2.jpeg") no-repeat center center;
     background-size: cover;
     // margin-bottom: 50px;
   }
   h3 {
     color: #000;
+  }
+  @include mobile {
+    background-size: cover;
+    // background-color: #000;
+    // background-image: none;
+    &:after {
+      content: "";
+      // @include size(95%, 90%);
+      position: absolute;
+      border: 1px solid #cc9f50;
+      margin: 5px;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      align-self: center;
+    }
+    // margin-bottom: 50px;
   }
 }
 
@@ -227,12 +265,19 @@
       color: #000;
       // padding-left: 30px;
       letter-spacing: 3.5px;
+
       .red {
         font-style: italic;
         font-size: 36px;
         font-weight: bold;
         line-height: 38px;
         color: #ec1d26;
+      }
+      @include mobile {
+        font-size: 22px;
+        .red {
+          font-size: 22px;
+        }
       }
     }
     .btnMore {
@@ -243,7 +288,7 @@
     }
   }
 }
-.role1 {
+.role3 {
   position: relative;
   .shinyStart {
     &:nth-child(1) {
@@ -259,6 +304,26 @@
       left: -30px;
 
       // bottom: 0px;
+    }
+  }
+}
+.role1,
+.role2,
+.role3 {
+  &.coupon1 {
+    .btn1 {
+      display: flex;
+    }
+    .btn2 {
+      display: none;
+    }
+  }
+  &.coupon2 {
+    .btn1 {
+      display: none;
+    }
+    .btn2 {
+      display: flex;
     }
   }
 }

@@ -46,12 +46,18 @@
   padding: 10px;
   @include mobile {
     order: 0;
-    max-width: 320px;
+    margin: auto;
+    margin-bottom: 0;
+    // max-width: 320px;
     width: 100%;
+    display: flex;
+    // align-self: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
   }
   @media only screen and (max-width: 500px) {
-    padding-right: 30%;
-    padding-top: 20%;
+    // padding-right: 30%;
+    // padding-top: 20%;
     .slogan {
       margin-bottom: 0px;
       height: auto;
@@ -98,6 +104,12 @@
   @include mobile {
     width: 100%;
     height: 100px;
+    margin-bottom: 0;
+    padding: 10px;
+    background-color: rgba(#000, 0.5);
+    img {
+      min-width: 300px;
+    }
   }
   img {
     width: 100%;
@@ -118,6 +130,9 @@
 
   margin-bottom: 25px;
   color: #cc9f50;
+  @include mobile {
+    background-color: rgba(#000, 0.5);
+  }
   // animation: flyingbird 5s infinite ease-in-out;
   // @include pad {
   //   width: 734px;
@@ -143,6 +158,9 @@
   padding: 12px 15px 12px 15px;
   width: 276px;
   height: 138px;
+  @include mobile {
+    background: rgba(#000, 0.5);
+  }
   span {
     display: block;
 
