@@ -1923,7 +1923,7 @@ footer .selection2 .logo {
 }
 @media (max-width: 768px) {
   #extra-banner {
-    width: 90%;
+    width: 95%;
     height: auto;
   }
 }
@@ -1968,8 +1968,18 @@ footer .selection2 .logo {
 }
 @media (max-width: 768px) {
   #extra-banner .container h6 {
-    font-size: 22px;
+    font-size: 21px;
   }
+}
+@media only screen and (max-width: 768px) and (max-width: 600px) {
+  #extra-banner .container h6 {
+    font-size: 16px;
+  }
+  #extra-banner .container h6 .red {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
   #extra-banner .container h6 .red {
     font-size: 22px;
   }
@@ -1979,6 +1989,11 @@ footer .selection2 .logo {
   border-radius: 23px;
   background-color: #000;
   color: #fff;
+}
+@media only screen and (max-width: 600px) {
+  #extra-banner .container .btnMore {
+    padding: 10px;
+  }
 }
 
 .role3 {
