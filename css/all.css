@@ -1670,6 +1670,126 @@ footer .selection2 .logo {
   height: 30px;
 }
 
+.footer-nav-wrapper {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+}
+.footer-nav-wrapper.open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-nav-wrapper.hide {
+  display: none;
+}
+.footer-nav-wrapper.coupon1 .nav1 .btn1, .footer-nav-wrapper.coupon1 .nav1 #selectionDetail-description-innerWrapper .btn2, #selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon1 .nav1 .btn2,
+.footer-nav-wrapper.coupon1 .nav2 .btn1,
+.footer-nav-wrapper.coupon1 .nav2 #selectionDetail-description-innerWrapper .btn2,
+#selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon1 .nav2 .btn2,
+.footer-nav-wrapper.coupon1 .nav3 .btn1,
+.footer-nav-wrapper.coupon1 .nav3 #selectionDetail-description-innerWrapper .btn2,
+#selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon1 .nav3 .btn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-nav-wrapper.coupon1 .nav1 .btn2,
+.footer-nav-wrapper.coupon1 .nav2 .btn2,
+.footer-nav-wrapper.coupon1 .nav3 .btn2 {
+  display: none;
+}
+.footer-nav-wrapper.coupon2 .nav1 .btn1, .footer-nav-wrapper.coupon2 .nav1 #selectionDetail-description-innerWrapper .btn2, #selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon2 .nav1 .btn2,
+.footer-nav-wrapper.coupon2 .nav2 .btn1,
+.footer-nav-wrapper.coupon2 .nav2 #selectionDetail-description-innerWrapper .btn2,
+#selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon2 .nav2 .btn2,
+.footer-nav-wrapper.coupon2 .nav3 .btn1,
+.footer-nav-wrapper.coupon2 .nav3 #selectionDetail-description-innerWrapper .btn2,
+#selectionDetail-description-innerWrapper .footer-nav-wrapper.coupon2 .nav3 .btn2 {
+  display: none;
+}
+.footer-nav-wrapper.coupon2 .nav1 .btn2,
+.footer-nav-wrapper.coupon2 .nav2 .btn2,
+.footer-nav-wrapper.coupon2 .nav3 .btn2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer-nav-wrapper .nav1,
+.footer-nav-wrapper .nav2,
+.footer-nav-wrapper .nav3 {
+  padding: 10px;
+  width: 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+.footer-nav-wrapper .nav1 .btn,
+.footer-nav-wrapper .nav2 .btn,
+.footer-nav-wrapper .nav3 .btn {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #cc9f50;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer-nav-wrapper .nav1:after,
+.footer-nav-wrapper .nav2:after,
+.footer-nav-wrapper .nav3:after {
+  content: "";
+  position: absolute;
+  margin: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #cc9f50;
+}
+.footer-nav-wrapper .nav1 .btn img {
+  width: 30px;
+  height: 30px;
+}
+.footer-nav-wrapper .nav2 .btn,
+.footer-nav-wrapper .nav3 .btn {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.footer-nav-wrapper .nav2 .btn .btn-icon,
+.footer-nav-wrapper .nav3 .btn .btn-icon {
+  padding: 5px;
+  min-width: 125px;
+  background: url("../img/btn-icon2.svg") no-repeat center center;
+  background-size: 70%;
+}
+
 .selectionCoupon-bg-wrapper {
   position: relative;
   overflow: hidden;

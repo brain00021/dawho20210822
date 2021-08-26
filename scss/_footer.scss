@@ -129,3 +129,95 @@ footer {
     }
   }
 }
+.footer-nav-wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(#000, 0.5);
+  display: flex;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  z-index: 999;
+  &.open {
+    display: flex;
+  }
+  &.hide {
+    display: none;
+  }
+  &.coupon1 {
+    .nav1,
+    .nav2,
+    .nav3 {
+      .btn1 {
+        display: flex;
+      }
+      .btn2 {
+        display: none;
+      }
+    }
+  }
+  &.coupon2 {
+    .nav1,
+    .nav2,
+    .nav3 {
+      .btn1 {
+        display: none;
+      }
+      .btn2 {
+        display: flex;
+      }
+    }
+  }
+  .nav1,
+  .nav2,
+  .nav3 {
+    padding: 10px;
+    width: 33%;
+    // height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    .btn {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: center;
+      color: #cc9f50;
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      z-index: 30;
+      // padding: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+    &:after {
+      content: "";
+      // @include size(90%, 90%);
+      position: absolute;
+      // margin: 10px;
+      margin: 5px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid #cc9f50;
+    }
+  }
+  .nav1 .btn {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .nav2 .btn,
+  .nav3 .btn {
+    flex-direction: column;
+    .btn-icon {
+      padding: 5px;
+      min-width: 125px;
+      background: url("../img/btn-icon2.svg") no-repeat center center;
+      background-size: 70%;
+    }
+  }
+}

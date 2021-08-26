@@ -8,6 +8,7 @@ $(function () {
         .addClass("animate__animated animate__fadeInDown");
     }
   };
+  let lastScrollTop = 0;
   $(window)
     .scroll(function () {
       const windowHeight = $(window).innerHeight() - 180;
@@ -24,6 +25,16 @@ $(function () {
       );
       scrollAddAnimate("#extra-banner", bodyPos, "#extra-banner");
       scrollAddAnimate("#btn-detail", bodyPos, "#btn-detail");
+
+      // scrollUP
+      let st = $(this).scrollTop();
+      if (st < lastScrollTop) {
+        $(".footer-nav-wrapper").removeClass(" hide").addClass("open");
+        // lastScrollTop = st;
+      } else {
+        $(".footer-nav-wrapper").removeClass("open").addClass("hide");
+      }
+      lastScrollTop = st;
     })
     .scroll();
   //click setting
@@ -43,7 +54,9 @@ $(function () {
 
       $(item).addClass("active");
       $(item).siblings().removeClass("active");
-      $(".role").removeClass("coupon2 coupon1").addClass(item.replace("#", ""));
+      $(".role,.footer-nav-wrapper")
+        .removeClass("coupon2 coupon1")
+        .addClass(item.replace("#", ""));
       $("#selectionDetail-description-innerWrapper")
         .removeClass()
         .addClass(item.replace("#", ""));

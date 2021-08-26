@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="123px" height="24px" viewBox="0 0 123 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>CF17E4CF-2459-4FD4-AF3D-B1E7EDF3A0A1</title>
+    <defs>
+        <filter x="-9.0%" y="-19.7%" width="118.0%" height="139.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="-4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Style" transform="translate(-465.000000, -4662.000000)" stroke="#CC9F50" stroke-width="2">
+            <g id="btn/sidebar/line" filter="url(#filter-1)" transform="translate(399.000000, 4636.500000)">
+                <g id="icon/sidebar" transform="translate(66.000000, 25.500000)">
+                    <polyline id="Path" points="19.35 9.06 19.23 8.94 15.82 5.53 15.24 4.96 12.29 2 2 12.29 12.29 22.58 15.24 19.63 15.82 19.04 19.23 15.63 19.35 15.52"></polyline>
+                    <polyline id="Path" points="19.35 2.01 9.06 12.29 19.35 22.58 19.35 22.58"></polyline>
+                    <polyline id="Path" points="22.89 19.3 15.88 12.29 22.89 5.28"></polyline>
+                    <line x1="15.24" y1="18.47" x2="15.24" y2="19.63" id="Path"></line>
+                    <line x1="15.24" y1="4.96" x2="15.24" y2="6.11" id="Path"></line>
+                    <polyline id="Path" points="103.62 9.06 103.74 8.94 107.15 5.53 107.73 4.96 110.68 2 120.97 12.29 110.68 22.58 107.73 19.63 107.15 19.04 103.74 15.63 103.62 15.52"></polyline>
+                    <polyline id="Path" points="103.62 2.01 113.91 12.29 103.62 22.58 103.62 22.58"></polyline>
+                    <polyline id="Path" points="100.08 19.3 107.09 12.29 100.08 5.28"></polyline>
+                    <line x1="107.73" y1="18.47" x2="107.73" y2="19.63" id="Path"></line>
+                    <line x1="107.73" y1="4.96" x2="107.73" y2="6.11" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
